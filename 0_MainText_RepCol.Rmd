@@ -23,32 +23,20 @@ csl: data/council-of-science-editors-author-date.csl
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
+## Introduccion
 
-"data/Citas/Analyzed.bib",
+La replicabilidad y reproducibilidad de resultados es critica en ciencia. La incremental tendencia en el uso de herramientas computaciones en diferentes cambios Biologicos ha generado progreso significativo en el conocimiento puntual en algunos sistemas. Sin embargo, la estructura formal en la que resultados en Biologia son generados y presentados contastan en muchos casos con aspectos basicos que respectan al uso adecuado de herramientas computacionales. Debido al relativamente reciente uso masivo de lenguajes de programacion (e.g. R, Python) para responder preguntas en Biologia, diferentes estudios han (1) examinado los patrones de repducibilidad en biologia computacional y ademas (2) propuesto diferentes aspectos que, en principio, podrian ayudar a incrementar el enlace de tecticas informaticas en el sistema de analisis biologicos.
 
-## R Markdown
+## Metodos
 
+Los analisis presentados en este articulo estan basados en una revision de articulos disponibles en la hemeroteca virtual SciELO (Scientific Electronic Library Online). Las busquedas, llevadas a cabo en Mayo 2022, se enfocaron en articulos publicados entre el 2015 y 2022 en revistas Colombianas (i.e. SciELO Colombia). Las busquedas se llevaron a cabo el motor de busqueda en search.scielo.org, filtrando por las colecciones de Colombia y restringiendo a resultados de publicaciones post-2015. Se utilizaron unicamente dos patrones de busqueda. Primero, para seleccionar articulos en temas de ecologia usando "Ecologia" en todos los indices. Segundo, articulos discutiendo aspectos de evolucion se restringieron a filogenetica usando el patron "Filogen\*" en todos los indices.
 
-This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+Cada uno de los articulos fue examinado manualmente dos veces por una sola persona. En cada iteracion, la secuencia de articulos durante la revision fue definida aleatoriamente usando la function `sample` en el paquete `base` de `R`.
 
-When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+## Resultados
 
-```{r cars}
-summary(cars)
-```
+Ecologia 258 resultados
 
-## Including Plots
-
-You can also embed plots, for example:
-
-```{r pressure, echo=FALSE}
-plot(pressure)
-```
-
-Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
-
+Filoge 112 resultados
 
 # References
-
-
-
