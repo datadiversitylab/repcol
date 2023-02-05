@@ -11,7 +11,7 @@ data$How.is.data.available.[data$How.is.data.available. == "In supplement"] <- "
 data$How.is.data.available.[data$How.is.data.available. == "Sequences are in a table"] <- "In text"
 
 data$How.is.data.available.[data$How.is.data.available. == "In text"] <- "Texto principal"
-data$How.is.data.available.[data$How.is.data.available. == "Supplement"] <- "Supplemento"
+data$How.is.data.available.[data$How.is.data.available. == "Supplement"] <- "Suplemento"
 data$How.is.data.available.[data$How.is.data.available. == "No"] <- "No disponibles"
 
 
@@ -29,6 +29,9 @@ sumds <- with(sumds, sumds[order(ds, -Freq),])
 
 sumds <- sumds %>%  group_by(ds) %>% 
   mutate(perc=100*Freq/sum(Freq))
+
+write.csv(sumds, "data/Tabla 1. Frecuencias.csv")
+
 
 ggthemr('light')
 
